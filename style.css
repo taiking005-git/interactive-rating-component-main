@@ -1,0 +1,13 @@
+@import url(https://fonts.google.com/specimen/Overpass);
+:root {
+  --primary-clr: var(hsl(216, 12%, 8%));
+}
+* {
+  margin: unset;
+  padding: unset;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-clr);
+}
