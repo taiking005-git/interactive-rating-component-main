@@ -1,6 +1,11 @@
-@import url(https://fonts.google.com/specimen/Overpass);
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 :root {
-  --primary-clr: var(hsl(216, 12%, 8%));
+  --Orange-neutral: hsl(25, 97%, 53%);
+  --primary-clr: hsl(216, 12%, 8%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 24%);
+  --Dark-Blue: hsl(213, 19%, 18%);
 }
 * {
   margin: unset;
@@ -10,4 +15,122 @@
 
 body {
   background-color: var(--primary-clr);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--White);
+  font-family: Overpass;
+}
+
+p {
+  font-size: 15px;
+  color: var(--Light-Grey);
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  height: 400px;
+  width: 415px;
+  background-color: var(--Dark-Blue);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--Medium-Grey);
+}
+.icon {
+  height: 1.5rem;
+}
+
+.star-icon {
+  position: relative;
+}
+.star-icon .icon {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.messages p {
+  font-weight: 400;
+}
+
+.rating-number {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.rating-number:hover.active,
+.rating-number.active {
+  background-color: var(--Orange-neutral);
+}
+.rating-number:hover {
+  background-color: var(--Light-Grey);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  height: 3rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--Orange-neutral);
+  text-transform: uppercase;
+  color: var(--White);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.submit:active {
+  background-color: var(--White);
+  color: var(--Orange-neutral);
+}
+
+/* Thank you section */
+.thanks-container {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+  width: 415px;
+  background-color: var(--Dark-Blue);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.selected-info {
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--Medium-Grey);
+  font-weight: 700;
+}
+.selected-info p {
+  color: var(--Orange-neutral);
+}
+
+.thank-you-message {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you-message p {
+  margin-top: 1rem;
 }
