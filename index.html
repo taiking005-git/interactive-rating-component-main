@@ -27,56 +27,58 @@
     </style>
   </head>
   <body>
-    <!-- Rating state start -->
-    <div class="rating-container">
-      <div class="star-icon circle">
-        <img class="icon" src="./images/icon-star.svg" alt="" />
+    <main>
+      <!-- Rating state start -->
+      <div class="rating-container">
+        <div class="star-icon circle">
+          <img class="icon" src="./images/icon-star.svg" alt="" />
+        </div>
+        <div class="messages">
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating">
+          <div class="rating-number circle" id="1">1</div>
+          <div class="rating-number circle" id="2">2</div>
+          <div class="rating-number circle" id="3">3</div>
+          <div class="rating-number circle" id="4">4</div>
+          <div class="rating-number circle" id="5">5</div>
+        </div>
+        <button class="submit btn" id="submit">submit</button>
       </div>
-      <div class="messages">
-        <h2>How did we do?</h2>
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-      </div>
-      <div class="rating">
-        <div class="rating-number circle" id="1">1</div>
-        <div class="rating-number circle" id="2">2</div>
-        <div class="rating-number circle" id="3">3</div>
-        <div class="rating-number circle" id="4">4</div>
-        <div class="rating-number circle" id="5">5</div>
-      </div>
-      <button class="submit btn" id="submit">submit</button>
-    </div>
 
-    <!-- Rating state end -->
+      <!-- Rating state end -->
 
-    <!-- Thank you state start -->
-    <div class="thanks-container">
-      <div class="illustration-icon">
-        <img src="./images/illustration-thank-you.svg" alt="" />
+      <!-- Thank you state start -->
+      <div class="thanks-container">
+        <div class="illustration-icon">
+          <img src="./images/illustration-thank-you.svg" alt="" />
+        </div>
+        <!-- Add rating here -->
+        <div class="selected-info">
+          <p>You selected <span id="rate">4</span> out of 5</p>
+        </div>
+        <div class="thank-you-message">
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. <br />
+            If you ever need more support, don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
-      <!-- Add rating here -->
-      <div class="selected-info">
-        <p>You selected <span id="rate">4</span> out of 5</p>
+      <!-- Thank you state end -->
+    </main>
+    <!-- <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Kolawole, Taiwo</a>.
       </div>
-      <div class="thank-you-message">
-        <h2>Thank you!</h2>
-        <p>
-          We appreciate you taking the time to give a rating. <br />
-          If you ever need more support, don’t hesitate to get in touch!
-        </p>
-      </div>
-    </div>
-    <!-- Thank you state end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Kolawole, Taiwo</a>.
-    </div>
-
+    </footer> -->
     <script src="./script.js"></script>
   </body>
 </html>

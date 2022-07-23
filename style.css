@@ -34,31 +34,11 @@ p {
   justify-content: space-evenly;
   position: relative;
   background-color: var(--Dark-Blue);
+  height: 400px;
+  width: 415px;
   border-radius: 2rem;
   padding: 2rem;
 }
-
-/* On screens that are 992px or less, set the background color to blue */
-@media all and (max-width: 1440px) {
-  .rating-container,
-  .thanks-container {
-    height: 400px;
-    width: 415px;
-  }
-  .circle {
-    width: 50px;
-    height: 50px;
-  }
-  .icon {
-    height: 1.5rem;
-  }
-  .star-icon .icon {
-    position: absolute;
-    top: 25%;
-    left: 25%;
-  }
-}
-
 @media all and (max-width: 375px) {
   .rating-container,
   .thanks-container {
@@ -82,13 +62,23 @@ p {
 .rating-container {
   display: flex;
 }
+.icon {
+  height: 1.5rem;
+}
 .circle {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--Medium-Grey);
 }
 
 .star-icon {
   position: relative;
+}
+.star-icon .icon {
+  position: absolute;
+  top: 25%;
+  left: 25%;
 }
 
 .messages p {
