@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here]https://taiking005-git.github.io/interactive-rating-component-main/)
+- Live Site URL: [github live site](https://taiking005-git.github.io/interactive-rating-component-main/)
 
 ### Built with
 
