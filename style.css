@@ -39,7 +39,7 @@ p {
 }
 
 /* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 1440px) {
+@media all and (max-width: 1440px) {
   .rating-container,
   .thanks-container {
     height: 400px;
@@ -59,7 +59,7 @@ p {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media all and (max-width: 375px) {
   .rating-container,
   .thanks-container {
     height: 400px;
